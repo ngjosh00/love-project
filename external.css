@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Yellowtail:400,500);
+.ani {
+  font-family: 'Yellowtail', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.ani * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.ani li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.ani a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.ani a:before,
+.ani a:after {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.ani a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid f09fd2;
+  border-top: 3px solid f6c6e4;
+  -webkit-transform: translate(100%, 50%);
+  -moz-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.ani a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid f09fd2;
+  border-bottom: 3px solid f6c6e4;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.ani a:hover,
+.ani .current a {
+  color: #ffffff;
+}
+.ani a:hover:before,
+.ani .current a:before,
+.ani a:hover:after,
+.ani .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+body {
+  background-color: #232532;
+  padding: 50px 0;
+}
+th {
+	color: white;
+	}
+td {
+	color: white;
+	vertical-align: bottom;
+	text-align: right;
+	}
+table {
+	border-collapse: collapse;
+	}
+table, th, td {
+	border: 1px solid white;
+	width: 1000px;
+	height:100px;
+	table-layout: fixed;
+	}
+td:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+	}
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;          
+}
+h2 { color: pink; font-size: 400%; font-style: italic; align-text: center;}
+p { color: white;}
+li { color: white;}
+h3 { color: pink;}
+h4 { color: pink; font-size: 200%;}
+h5 { color: pink; font-size: 300%;}
+h6 { color: white; text-align: right;}
+label { color: white;}

@@ -1,0 +1,142 @@
+<html>
+<head>
+<title>Language</title>
+<link rel="stylesheet" type="text/css" href="external.css">
+<meta charset="utf-8"/>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Yellowtail:400,500);
+.ani {
+  font-family: 'Yellowtail', Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.ani * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.ani li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0 1em;
+  padding: 0;
+}
+.ani a {
+  padding: 0.5em 0.8em;
+  margin: 0.2em 0;
+  display: block;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+}
+.ani a:before,
+.ani a:after {
+  height: 5px;
+  width: 5px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.ani a:before {
+  left: 0;
+  top: 0;
+  border-left: 3px solid f09fd2;
+  border-top: 3px solid f6c6e4;
+  -webkit-transform: translate(100%, 50%);
+  -moz-transform: translate(100%, 50%);
+  transform: translate(100%, 50%);
+}
+.ani a:after {
+  right: 0;
+  bottom: 0;
+  border-right: 3px solid f09fd2;
+  border-bottom: 3px solid f6c6e4;
+  -webkit-transform: translate(-100%, -50%);
+  -moz-transform: translate(-100%, -50%);
+  transform: translate(-100%, -50%);
+}
+.ani a:hover,
+.ani .current a {
+  color: #ffffff;
+}
+.ani a:hover:before,
+.ani .current a:before,
+.ani a:hover:after,
+.ani .current a:after {
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<ul class="ani">
+  <li><a href="home.html">Home</a></li>
+  <li><a href="love.html">LUV</a></li>
+  <li class="current"><a href="language.html">Language</a></li>
+  <li><a href="calendar.html">Calendar</a></li>
+</ul>
+
+<div align="center">
+<h2>Love Languages</h2>
+
+<img src="images/languages.png" width="700" alt="the five love languages">
+
+<br>
+<br>
+
+<p>There are 5 main love languages that consist of:</p>
+<span style="color:green;">Words of Affirmation</span>&nbsp &nbsp &nbsp &nbsp &nbsp
+<span style="color:red;">Receiving Gifts</span>&nbsp &nbsp &nbsp &nbsp &nbsp
+<span style="color:yellow;">Quality Time</span>&nbsp &nbsp &nbsp &nbsp &nbsp
+<span style="color:dodgerblue;">Acts of Service</span>&nbsp &nbsp &nbsp &nbsp &nbsp
+<span style="color:orange;">Physical Touch</span>
+
+<br>
+<br>
+<br>
+
+<p class="ani"><a href="https://www.5lovelanguages.com/quizzes/"  target="_blank">Take the Love Languages Quiz</a></p>
+
+<br>
+
+<h3>Tell us what your top love language is!</h3>
+<form action="thanks.html">
+  <label for="fname">First name:</label> 
+  <input type="text" id="fname" name="fname"> &nbsp &nbsp &nbsp &nbsp &nbsp
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname">
+  <br>
+  <br>
+  <input type="radio" id="woa" name="lovelanguage" value="Words of Affirmation">
+  <label for="Words of Affirmation">Words of Affirmation</label>&nbsp &nbsp &nbsp &nbsp &nbsp
+  <input type="radio" id="rg" name="lovelanguage" value="Receiving Gifts">
+  <label for="Recieving Gifts">Receiving Gifts</label>&nbsp &nbsp &nbsp &nbsp &nbsp
+  <input type="radio" id="qt" name="lovelanguage" value="Quality Time">
+  <label for="Quality Time">Quality Time</label>&nbsp &nbsp &nbsp &nbsp &nbsp
+  <input type="radio" id="aos" name="lovelanguage" value="Acts of Service">
+  <label for="Acts of Service">Acts of Service</label>&nbsp &nbsp &nbsp &nbsp &nbsp
+  <input type="radio" id="wof" name="lovelanguage" value="Physical Touch">
+  <label for="Physical Touch">Physical Touch</label>
+  <br>
+  <br>
+  <input type="submit" value="Submit">
+</form>
+</div>
+
+<footer>
+  <h6>Created by: Joshua Ng</h6>
+</footer>
+
+</body>
+</html>
